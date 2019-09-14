@@ -9,19 +9,19 @@ const Teaching = () => (
     <SEO title="Teaching" />
     <h1>Teaching</h1>
     <p>
-      Course code. <i>Course name</i>.
+      STAT/CMSC 119 <i>Introduction to Data Science II</i>.
       <br />
-      Semester taught. Role.
+      Winter 2019; TA.
     </p>
     <p>
-      Course code. <i>Course name</i>.
+      STAT/CMSC 118 <i>Introduction to Data Science I</i>.
       <br />
-      Semester taught. Role.
+      Fall 2018; TA
     </p>
     <p>
-      Course code. <i>Course name</i>.
+      STAT 234 <i>Statistical Models and Methods</i>.
       <br />
-      Semester taught. Role.
+      Winter, Spring 2018; TA/ Head TA
     </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
