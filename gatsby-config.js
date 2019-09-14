@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Abby Steven's Portfolio`,
+    description: `Abby Stevens`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,6 +15,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`karla`, `roboto mono`],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

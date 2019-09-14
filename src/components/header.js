@@ -5,18 +5,21 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#1f3b66`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
+        display: `flex`,
+        flexDirection: `row`,
+        justifyContent: `flex-start`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -24,9 +27,42 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Home
         </Link>
-      </h1>
+      </h5>
+      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+        <Link
+          to="/research"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Research
+        </Link>
+      </h5>
+      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+        <Link
+          to="/teaching"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Teaching
+        </Link>
+      </h5>
+      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+        <Link
+          to="/cv"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          CV
+        </Link>
+      </h5>
     </div>
   </header>
 )
