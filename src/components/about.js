@@ -7,19 +7,24 @@ export const About = () => {
       <div>
         <h4>About Me</h4>
       </div>
-      <div
-        style={{
-          alignSelf: `center`,
-          maxWidth: `337px`,
-          marginBottom: `1.45rem`,
-        }}
-      >
-        <Image />
+      <div className="about">
+        <div
+          className="pic"
+          style={{
+            alignSelf: `center`,
+            maxWidth: `337px`,
+            marginBottom: `1.45rem`,
+          }}
+        >
+          <Image />
+        </div>
+        <div className="info">
+          <p>
+            I am a third-year graduate student in the Dept. of Statistics at
+            UChicago.
+          </p>
+        </div>
       </div>
-      <p>
-        I am a third-year graduate student in the Dept. of Statistics at
-        UChicago.
-      </p>
     </div>
   )
 }

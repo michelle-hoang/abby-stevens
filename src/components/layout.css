@@ -622,8 +622,25 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 485px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pic {
+    width: 300px;
+  }
+
+  .info {
+    padding-left: 2rem;
+    width: 50%;
   }
 }
