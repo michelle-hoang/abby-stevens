@@ -3,15 +3,26 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import About from "../components/about"
-import Contact from "../components/contact"
+
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Abby Stevens</h1>
-    <About />
-    <Contact />
+    <div className="main">
+      <div className="container">
+        <h1
+          style={{
+            fontFamily: "Cooper",
+            textAlign: "center",
+            marginBottom: "2rem",
+          }}
+        >
+          <span className="highlight"> Abby Stevens </span>
+        </h1>
+        <About />
+      </div>
+    </div>
   </Layout>
 )
 

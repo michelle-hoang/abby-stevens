@@ -5,18 +5,24 @@
   src: local("Apercu"), url("../fonts/Apercu.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Cooper";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cooper"), url("../fonts/Cooper.woff") format("woff");
+}
+
 * {
   font-family: "Apercu";
 }
 
 html {
-  /* font-family: sans-serif; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   background: #fffff8;
-  color: #1f3b66;
+  color: black;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,10 +59,13 @@ template {
   display: none;
 }
 a {
+  text-decoration: none;
+  color: black;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
+a:visited,
 a:hover {
   outline-width: 0;
 }
@@ -74,6 +83,7 @@ dfn {
   font-style: italic;
 }
 h1 {
+  font-family: "Cooper";
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -212,7 +222,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: #1f3b66;
+  color: black;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -243,7 +253,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "Apercu", Helvetica Neue, sans-serif;
+  font-family: "Cooper", Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -259,7 +269,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "Apercu", Helvetica Neue, sans-serif;
+  font-family: "Cooper", Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -275,7 +285,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "Apercu", Helvetica Neue, sans-serif;
+  font-family: "Cooper", Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -291,7 +301,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 0.75rem;
   color: inherit;
-  font-family: "Apercu", Helvetica Neue, sans-serif;
+  font-family: "Cooper", Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -307,7 +317,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "Apercu", Helvetica Neue, sans-serif;
+  font-family: "Cooper", Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -623,6 +633,17 @@ pre tt:after {
   content: "";
 }
 
+.highlight {
+  font-family: "Cooper";
+  background: linear-gradient(180deg, rgba(255, 255, 248, 0) 65%, #ffd54f 35%);
+}
+
+.backButton a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -630,9 +651,14 @@ pre tt:after {
 }
 
 @media only screen and (min-width: 485px) {
+  .aboutHeader {
+    text-align: center;
+  }
+
   .about {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .pic {
@@ -640,7 +666,18 @@ pre tt:after {
   }
 
   .info {
-    padding-left: 2rem;
-    width: 50%;
+    padding-left: 4rem;
+    width: 60%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 50rem;
   }
 }

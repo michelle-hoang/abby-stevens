@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Abby Steven's Portfolio`,
-    description: `Abby Stevens`,
-    author: `@gatsbyjs`,
+    description: `Academic website for Abby Stevens, Ph.D candidate in Dept. of Statistics at UChicago`,
+    author: `@michelle-hoang`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,12 +15,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`karla`, `roboto mono`],
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
