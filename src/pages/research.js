@@ -8,7 +8,7 @@ const Research = () => (
     <SEO title="Research" />
     <div className="main">
       <div className="container">
-        <h2>Research Interests:</h2>
+        <h2>Research Interests</h2>
         <div style={{ paddingLeft: `2rem` }}>
           <ul>
             <li>Math</li>
@@ -42,9 +42,9 @@ const Research = () => (
           <i>eprint arXiv:1811.05577</i>, November 2018.
           <br />
         </p>
-        <BackButton />
       </div>
     </div>
+    <BackButton />
   </Layout>
 )
 

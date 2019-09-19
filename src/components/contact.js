@@ -12,7 +12,14 @@ export const Contact = () => {
           Jones 203/204
           <br />
           Chicago, IL, 60615 <br />
-          Email: abbystevens@uchicago
+          Email:{" "}
+          <a
+            href={`mailto:  abbystevens@uchicago.edu`}
+            target="_blank"
+            style={{ textDecoration: `underline` }}
+          >
+            abbystevens@uchicago.edu
+          </a>
         </p>
       </div>
     </div>

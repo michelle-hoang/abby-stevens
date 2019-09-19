@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
         justifyContent: `flex-start`,
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1rem 1.75rem`,
       }}
     >
       <h5 style={{ margin: 0 }}>
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
           Home
         </Link>
       </h5>
-      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+      <h5 style={{ paddingLeft: `1.5rem`, margin: 0 }}>
         <Link
           to="/research"
           style={{
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => (
           Research
         </Link>
       </h5>
-      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+      <h5 style={{ paddingLeft: `1.5rem`, margin: 0 }}>
         <Link
           to="/teaching"
           style={{
@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => (
           Teaching
         </Link>
       </h5>
-      <h5 style={{ paddingLeft: `1rem`, margin: 0 }}>
+      <h5 style={{ paddingLeft: `1.5rem`, margin: 0 }}>
         <Link
           to="/contact-me"
           style={{

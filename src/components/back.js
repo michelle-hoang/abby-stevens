@@ -27,10 +27,10 @@ export const BackButton = () => {
           display: `flex`,
           flexDirection: `row`,
           justifyContent: `center`,
-
           backgroundColor: `#d84315`,
-          width: `10rem`,
+          width: `11rem`,
           padding: `0.25rem`,
+          marginLeft: `0.5rem`,
         }}
       >
         <div style={{ width: `25px` }}>
