@@ -4,15 +4,7 @@ import Image from "./image"
 export const About = () => {
   return (
     <div className="about">
-      <div
-        className="pic"
-        style={{
-          alignSelf: `center`,
-          maxWidth: `350px`,
-          marginBottom: `1.45rem`,
-        }}
-        //this styling is applied, regardless of mobile or web
-      >
+      <div className="pic">
         <Image />
       </div>
       <div className="info">

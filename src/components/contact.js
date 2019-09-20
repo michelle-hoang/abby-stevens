@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <div>
       <div>
-        <h2 style={{ fontFamily: "Cooper" }}>Contact Info:</h2>
+        <h2>Contact Info:</h2>
         <p>
           University of Chicago <br />
           Department of Statistics <br />

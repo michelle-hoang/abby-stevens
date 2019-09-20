@@ -22,17 +22,7 @@ const BackIcon = () => {
 export const BackButton = () => {
   return (
     <Link className="backButton" to="/">
-      <div
-        style={{
-          display: `flex`,
-          flexDirection: `row`,
-          justifyContent: `center`,
-          backgroundColor: `#d84315`,
-          width: `11rem`,
-          padding: `0.25rem`,
-          marginLeft: `0.5rem`,
-        }}
-      >
+      <div className="backButtonContainer">
         <div style={{ width: `25px` }}>
           <BackIcon />
         </div>

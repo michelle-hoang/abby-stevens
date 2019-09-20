@@ -25,7 +25,7 @@ const Teaching = () => (
           <br />
           Winter, Spring 2018; TA/ Head TA
         </p>
-      </div>{" "}
+      </div>
     </div>
     <BackButton />
   </Layout>
